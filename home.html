@@ -11,6 +11,18 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
     <link rel="stylesheet" href="./assest/css/main.css" />
     <script
       defer
@@ -30,7 +42,7 @@
           <a href="home.html"
             ><img src="./assest/img/Jevelin_logo_light.png" alt=""
           /></a>
-          <nav>
+          <nav class="nav">
             <ul>
               <li><a href="home.html">Home</a></li>
               <li><a href="home.html">Gallery</a></li>
@@ -151,10 +163,15 @@
             <h1>Choose the best color for your activity</h1>
           </div>
           <div class="cards">
-            <!-- <div class="card" style="background-image: url(./assest/img/Group-8211-copy-2.jpg);" >
-              <h5>WRIST BAND</h5>
+            <!-- <div class="card" >
+              <div class="image">
+                <img src="./assest/img/Group-8211-copy-3.jpg" alt="">
+              </div>
+              <div class="text">
+                <h5>WRIST BAND</h5>
               <h2>Mint Green</h2>
               <h3>$25.50</h3>
+              </div>
             </div>
             <div class="card">
               <h5>WRIST BAND</h5>
@@ -171,5 +188,169 @@
         </div>
       </div>
     </section>
+    <section id="customers">
+      <div class="container">
+        <div class="customers">
+          <div class="top">
+            <h1>What our customers say</h1>
+          </div>
+          <div class="carusel">
+            <div
+              id="carouselExampleCaptions"
+              class="carousel slide carusel-slide"
+              data-bs-ride="carousel"
+            >
+              <div class="carousel-indicators">
+                <button
+                  type="button"
+                  data-bs-target="#carouselExampleCaptions"
+                  data-bs-slide-to="0"
+                  class="active"
+                  aria-current="true"
+                  aria-label="Slide 1"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#carouselExampleCaptions"
+                  data-bs-slide-to="1"
+                  aria-label="Slide 2"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#carouselExampleCaptions"
+                  data-bs-slide-to="2"
+                  aria-label="Slide 3"
+                ></button>
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active carusel-box">
+                  <div class="image">
+                    <img
+                      src="./assest/img/tyler-nix-626668-unsplash.jpg"
+                      alt=""
+                    />
+                  </div>
+                  <div class="carousel-caption d-none d-md-block">
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Quia dolorem maiores voluptatum atque. Similique excepturi
+                      dolor debitis laudantium exercitationem officiis
+                      reiciendis, ratione repellat sunt iure nobis vero dolorum
+                      culpa voluptatem.
+                    </p>
+                    <h5>MARGGIE WILLSON</h5>
+                    <h3>99</h3>
+                  </div>
+                </div>
+                <div class="carousel-item carusel-box">
+                  <div class="image">
+                    <img
+                      src="./assest/img/tyler-nix-626668-unsplash2.jpg"
+                      alt=""
+                    />
+                  </div>
+                  <div class="carousel-caption d-none d-md-block">
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Repellat quisquam, aspernatur magni dolorem illo dolor hic
+                      quis neque. Consequuntur quaerat sit quisquam ut facere
+                      corporis. Dolor vitae suscipit incidunt. Quibusdam?
+                    </p>
+                    <h5>MARGGIE WILLSON</h5>
+                    <h3>99</h3>
+                  </div>
+                </div>
+              </div>
+              <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="prev"
+              >
+                <span
+                  class="carousel-control-prev-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="next"
+              >
+                <span
+                  class="carousel-control-next-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="section-icon">
+      <div class="container">
+        <div class="section-icon">
+          <i class="fa-brands fa-youtube"></i>
+          <i class="fa-brands fa-twitter"></i>
+          <i class="fa-brands fa-facebook-f"></i>
+          <i class="fa-brands fa-instagram"></i>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="container">
+        <div class="footer">
+          <div class="top">
+            <div class="left">
+              <img src="./assest/img/Jevelin_logo_light.png" alt="" />
+              <p>
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
+                diam.
+              </p>
+              <div class="image">
+                <i class="fa-brands fa-vimeo"></i>
+                <i class="fa-solid fa-money-bill"></i>
+                <i class="fa-brands fa-vimeo"></i>
+                <i class="fa-solid fa-money-bill"></i>
+                <i class="fa-brands fa-vimeo"></i>
+              </div>
+              <p>Secure online payment</p>
+            </div>
+            <div class="right">
+              <div class="box">
+                <h2>BEST EXPERIENCE</h2>
+                <nav>
+                  <ul>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Shipment</a></li>
+                    <li><a href="#">Returns</a></li>
+                    <li><a href="#">Gift cards</a></li>
+                    <li><a href="#">Policies</a></li>
+                  </ul>
+                </nav>
+              </div>
+              <div class="box">
+                <h2>COMPANY</h2>
+                <nav>
+                  <ul>
+                    <li><a href="#">About us</a></li>
+                    <li><a href="#">Press</a></li>
+                    <li><a href="#">Offices</a></li>
+                    <li><a href="#">Affiliates</a></li>
+                    <li><a href="#">Giveaway</a></li>
+                  </ul>
+                </nav>
+              </div>
+            </div>
+          </div>
+          <div class="bottom">
+            <p>Copyright © 2018 JevelinTheme - Theme by Shufflehound</p>
+          </div>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>

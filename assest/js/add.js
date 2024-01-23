@@ -2,8 +2,8 @@ const BASE_URL = " http://localhost:8080";
 const tBody = document.querySelector("tbody");
 const form = document.querySelector("form");
 const allInput = document.querySelectorAll("input");
-const search=document.querySelector(".search")
-const sort=document.querySelector(".sort")
+const search = document.querySelector(".search");
+const sort = document.querySelector(".sort");
 let newData;
 let copyData;
 async function getData() {
@@ -56,15 +56,27 @@ async function dataDelete(id, btn) {
   }
 }
 // SEARCH
-search.addEventListener("input", function(e){
-    let filtered=newData.filter((item)=>item.name.toLocaleLowerCase().includes(e.target.value.toLocaleLowerCase()))
-    drawTable(filtered)
-})
+search.addEventListener("input", function (e) {
+  let filtered = newData.filter((item) =>
+    item.name.toLocaleLowerCase().includes(e.target.value.toLocaleLowerCase())
+  );
+  drawTable(filtered);
+});
 // SORT
-sort.addEventListener("click",function(){
-    let sorted;
-    if(sort.innerText==="ASC"){
-        sort.innerText==="ASC"
-// sorted=await axios.sort
-    }
-})
+sort.addEventListener("click", function () {
+  let sorted;
+  if (sort.innerText === "ASC") {
+    sort.innerText = "DES";
+    sorted = newData.sort((a, b) =>
+      a.name.toLocaleLowerCase().localeCompare(b.name.toLocaleLowerCase())
+    );
+  } else if (sort.innerText === "DES") {
+    sort.innerText = "ASC";
+    sorted = newData.sort((a, b) =>
+      b.name.toLocaleLowerCase().localeCompare(a.name.toLocaleLowerCase())
+    );
+  } else if (sort.innerText === "ASC") {
+    sorted = copyData;
+  }
+  drawTable(sorted);
+});

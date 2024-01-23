@@ -1,6 +1,14 @@
 const BASE_URL = " http://localhost:8080";
 const cards = document.querySelector(".cards");
 const more = document.querySelector(".more");
+menuIcon = document.querySelector(".fa-solid");
+navBar = document.querySelector(".nav");
+menuIcon.addEventListener("click", function () {
+  navBar.classList.toggle("show");
+  this.classList.contains("fa-bars")
+    ? (this.className = "fa-solid fa-x")
+    : (this.className = "fa-solid fa-bars");
+});
 let newData;
 let limit = 3;
 async function getData() {
@@ -14,10 +22,17 @@ function drawCards(arr) {
   arr.forEach((element) => {
     const card = document.createElement("div");
     card.className = "card";
-    card.innerHTML += `
-        <h5>${element.des}</h5>
-              <h2>${element.name}</h2>
-              <h3>$${element.price}</h3>
+    card.innerHTML += `<div class="image">
+    <img src="${element.img}" alt="">
+  </div>
+  <div class="text">
+  <h5>${element.des}</h5>
+  <a href="details.html?id=${element.id}"><h2>${element.name}</h2></a> 
+
+  <h3>$${element.price}</h3>
+  </div>
+       
+              
         `;
     cards.append(card);
   });
