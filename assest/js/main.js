@@ -41,7 +41,7 @@ function drawCards(arr) {
 more.addEventListener("click", function () {
   limit += 3;
   drawCards(newData.slice(0, limit));
-  if (limit >= newData.lenght) {
+  if (limit >= newData.length) {
     this.remove();
   }
 });
