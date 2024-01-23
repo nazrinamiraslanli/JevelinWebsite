@@ -281,13 +281,14 @@ header .header .menu {
 }
 #activity .activity .cards {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   gap: 40px;
   width: 100%;
 }
 #activity .activity .cards .card {
-  width: 32%;
+  width: 31%;
   height: 360px;
   background-image: url("../img/Group-8211-copy-2.jpg");
   display: flex;
@@ -295,6 +296,9 @@ header .header .menu {
   align-items: center;
   flex-direction: column;
   gap: 20px;
+}
+#activity .activity .cards .card h2 {
+  font-size: 30px;
 }
 #activity .activity .cards .card h5 {
   font-size: 15px;
@@ -309,4 +313,69 @@ header .header .menu {
   border-radius: 50px;
   background: transparent;
   color: white;
+  border: 2px solid white;
+  width: 130px;
+}
+#activity .activity .more:hover {
+  color: RGB(155, 155, 155);
+}
+@media screen and (min-width: 300px) and (max-width: 599px) {
+  #activity .activity .cards {
+    flex-direction: column;
+  }
+  #activity .activity .cards .card {
+    width: 80%;
+  }
+}
+
+#form-table {
+  padding: 3rem 0;
+  padding-top: 100px;
+  background-color: rgb(54, 54, 54);
+}
+#form-table .form-table {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 50px;
+}
+#form-table .form-table form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+}
+#form-table .form-table form input {
+  padding: 10px 15px;
+  width: 300px;
+  border-radius: 10px;
+}
+#form-table .form-table form .submit {
+  color: green;
+  padding: 15px 20px;
+  border-radius: 50px;
+  width: 150px;
+  border: 1px solid green;
+  background: transparent;
+  font-size: 16px;
+}
+#form-table .form-table form .submit:hover {
+  background-color: green;
+  color: white;
+}
+#form-table .form-table .search-sort input {
+  padding: 10px 15px;
+  width: 300px;
+  border-radius: 10px;
+}
+#form-table .form-table table, #form-table .form-table th, #form-table .form-table td {
+  border: 2px solid black;
+  background-color: rgb(156, 154, 154);
+  border-collapse: collapse;
+  padding: 10px 15px;
+}
+#form-table .form-table table img, #form-table .form-table th img, #form-table .form-table td img {
+  width: 100px;
 }/*# sourceMappingURL=main.css.map */
